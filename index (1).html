@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Bid Estimating Solutions | Professional USA Construction Estimating Services</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#0f172a',
+                            light: '#1e293b',
+                            accent: '#f59e0b',
+                            accentHover: '#d97706',
+                            blue: '#2563eb'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-accent text-slate-950 font-semibold text-xs sm:text-sm py-2 px-4 text-center">
+        <i class="fa-solid fa-fire mr-2"></i> USA's Trusted Estimating Partner for General Contractors & Subcontractors | Fast 24-48 Hour Turnaround!
+    </div>
+
+    <!-- Main Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand text-brand-accent flex items-center justify-center font-extrabold text-xl shadow-md">
+                    PB
+                </div>
+                <div>
+                    <span class="text-lg sm:text-xl font-extrabold text-brand tracking-tight">Prime Bid</span>
+                    <span class="block text-xs font-semibold text-brand-blue tracking-widest uppercase">Estimating Solutions</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#services" class="hover:text-brand-blue transition">Services</a>
+                <a href="#pricing" class="hover:text-brand-blue transition">Pricing</a>
+                <a href="#trades" class="hover:text-brand-blue transition">Trades</a>
+                <a href="#samples" class="hover:text-brand-blue transition">Sample Reports</a>
+                <a href="#calculator" class="hover:text-brand-blue transition">Estimate Calculator</a>
+                <a href="#faq" class="hover:text-brand-blue transition">FAQ</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="mailto:info@primebidestimatingsolutions.com" class="text-sm font-semibold text-slate-700 hover:text-brand-blue">
+                    <i class="fa-solid fa-envelope text-brand-accent mr-1"></i> info@primebidestimatingsolutions.com
+                </a>
+                <a href="#contact" class="bg-brand-blue hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm shadow-md transition">
+                    Get Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="block py-2 font-medium text-slate-700">Services</a>
+            <a href="#pricing" class="block py-2 font-medium text-slate-700">Pricing</a>
+            <a href="#trades" class="block py-2 font-medium text-slate-700">Trades</a>
+            <a href="#samples" class="block py-2 font-medium text-slate-700">Sample Reports</a>
+            <a href="#calculator" class="block py-2 font-medium text-slate-700">Estimate Calculator</a>
+            <a href="#faq" class="block py-2 font-medium text-slate-700">FAQ</a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-3">
+                <a href="mailto:info@primebidestimatingsolutions.com" class="text-sm font-semibold text-slate-700">
+                    <i class="fa-solid fa-envelope text-brand-accent mr-1"></i> info@primebidestimatingsolutions.com
+                </a>
+                <a href="#contact" class="bg-brand-blue text-center text-white py-3 rounded-xl font-semibold shadow-md">
+                    Get Free Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-24 lg:py-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-light/80 border border-slate-700 text-brand-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-shield-halved"></i> USA Certified Construction Estimators
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Win More Bids with <span class="text-brand-accent">Precision Cost Estimates</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 font-normal max-w-2xl leading-relaxed">
+                        Accurate, detailed, and fast takeoff and estimating services for USA general contractors, subcontractors, and developers. Affordable pricing starting from <span class="text-white font-semibold">$70 per project</span> or flexible monthly plans with <span class="text-brand-accent font-semibold">free unlimited revisions</span>!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#contact" class="bg-brand-accent hover:bg-brand-accentHover text-slate-950 font-bold px-8 py-4 rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2">
+                            <span>Submit Plans for Free Quote</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#pricing" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-8 py-4 rounded-xl text-center transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-tags text-brand-accent"></i>
+                            <span>View Pricing Plans</span>
+                        </a>
+                    </div>
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800 text-slate-300">
+                        <div>
+                            <div class="text-2xl font-bold text-white">99%</div>
+                            <div class="text-xs text-slate-400">Bid Accuracy</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">24-48h</div>
+                            <div class="text-xs text-slate-400">Turnaround Time</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">500+</div>
+                            <div class="text-xs text-slate-400">Projects Won</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Upload Card -->
+                <div class="lg:col-span-5 bg-white text-slate-800 p-8 rounded-2xl shadow-2xl border border-slate-100">
+                    <div class="bg-amber-100 text-amber-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider text-center mb-3">
+                        <i class="fa-solid fa-gift mr-1"></i> Special Offer: First Estimate 100% FREE!
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Upload Plans & Get Estimate</h3>
+                    <p class="text-xs text-slate-500 mb-6">Attach your blueprints or plans for a rapid turnaround estimate.</p>
+                    
+                    <form id="hero-quote-form" onsubmit="handleHeroSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Company / Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="john@contractor.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Trade / Scope of Work</label>
+                            <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                <option>Full Estimate & Takeoff</option>
+                                <option>Concrete & Masonry</option>
+                                <option>Drywall & Framing</option>
+                                <option>MEP (Mechanical, Electrical, Plumbing)</option>
+                                <option>Roofing & Siting</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Upload Plan (PDF, Bluebeam, Plans)</label>
+                            <div class="border-2 border-dashed border-slate-300 rounded-xl p-4 text-center hover:bg-slate-50 transition cursor-pointer">
+                                <i class="fa-solid fa-cloud-arrow-up text-2xl text-brand-blue mb-1"></i>
+                                <p class="text-xs text-slate-600 font-medium">Drag & drop files here or <span class="text-brand-blue underline">browse</span></p>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-brand hover:bg-slate-900 text-white font-semibold py-3.5 rounded-xl shadow-md transition text-sm">
+                            Request Quote ($70 - $250 / Project)
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-blue font-bold text-xs uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Professional Services</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Comprehensive Estimating & Architectural Solutions</h2>
+                <p class="text-slate-600 mt-4 text-base">From precise material takeoffs and cost estimation to full architectural drawings, shop drawings, and contractor marketing support.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Full Cost Estimation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Complete breakdown of material costs, labor hours, equipment rental, overhead, and profit margins to help you submit winning bids.</p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium">
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> CSI MasterFormat Divisions</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Local USA ZIP Code Pricing</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Ready-to-submit Excel & PDF formats</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 card-hover">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Quantity Takeoffs</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Precise itemized material counts utilizing state-of-the-art takeoff software (Bluebeam, Planswift, AccuBid) with color-coded markups.</p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium">
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Linear feet, square footage & volumes</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Color-coded visual markups</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Zero waste allowance verification</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 card-hover">
+                    <div class="w-14 h-14 bg-indigo-100 text-indigo-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Shop & Architectural Drawings</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Professional 2D & 3D architectural drawings, shop drawings, and custom cabinetry design for residential and commercial builds.</p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium">
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> 2D & 3D Architectural Renderings</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Detailed Shop & Fabrication Drawings</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Custom Cabinetry & Millwork Design</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 card-hover">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">GC Bid Follow-Up Services</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">We actively follow up with general contractors on your submitted bids to secure feedback, handle inquiries, and win more projects.</p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium">
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Professional GC Communication</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Status Tracking & Negotiations</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Addenda & RFI Management</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 card-hover">
+                    <div class="w-14 h-14 bg-purple-100 text-purple-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Email & Call Marketing</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Targeted email campaigns and outbound call marketing to general contractors and developers to keep your pipeline full of projects.</p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium">
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Targeted GC Outreach Campaigns</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Lead Generation & Calling</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Subcontractor Networking</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 card-hover">
+                    <div class="w-14 h-14 bg-rose-100 text-rose-700 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Subcontractor Bid Support</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Helping specialty trade contractors prepare competitive bids and proposal packages for GC bidding portals (Procore, BuildingConnected).</p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium">
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Subcontractor scope alignment</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> RFIs and addenda review</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> Fast turnaround for tight deadlines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-accent font-bold text-xs uppercase tracking-widest bg-slate-800 px-3 py-1 rounded-full border border-slate-700">Transparent Pricing & Discounts</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Simple Plans & Massive Volume Discounts</h2>
+                <p class="text-slate-300 mt-4 text-base">Choose per-project estimating starting from $70 to $250, or email us for our custom Monthly Plans with <span class="text-brand-accent font-semibold">even deeper discounts</span> and your <span class="text-white font-semibold">First Estimate 100% FREE</span>!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Plan 1: Per Project -->
+                <div class="bg-slate-800 border border-slate-700 p-8 lg:p-10 rounded-3xl relative flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="bg-brand-blue text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Pay Per Project</span>
+                            <span class="bg-green-900/80 text-green-300 text-xs font-semibold px-2.5 py-1 rounded-full">Up to 40% Bulk Discounts</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-white">Single Project Estimating</h3>
+                        <p class="text-slate-300 text-sm mt-2">Ideal for contractors bidding on selective projects throughout the month.</p>
+                        
+                        <div class="my-6">
+                            <span class="text-4xl sm:text-5xl font-extrabold text-white">$70 - $250</span>
+                            <span class="text-slate-400 text-sm ml-2">/ project (Depending on scope)</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8 border-t border-slate-700 pt-6">
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> Full Material & Labor Takeoff</li>
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> 24 - 48 Hour Turnaround</li>
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> Excel & PDF Detailed Report</li>
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> <strong class="text-white">Free Revisions</strong> included</li>
+                            <li><i class="fa-solid fa-check text-green-400 mr-3"></i> <strong class="text-white">Up to 40% OFF</strong> on multi-project batches</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full bg-brand-blue hover:bg-blue-600 text-white font-bold py-4 rounded-xl text-center shadow-md transition">
+                        Get Project Estimate
+                    </a>
+                </div>
+
+                <!-- Plan 2: Monthly Subscription -->
+                <div class="bg-gradient-to-br from-blue-900 via-slate-800 to-slate-900 border-2 border-brand-accent p-8 lg:p-10 rounded-3xl relative flex flex-col justify-between shadow-2xl">
+                    <div class="absolute -top-4 right-8 bg-brand-accent text-slate-950 font-bold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow">
+                        First Estimate 100% FREE!
+                    </div>
+                    <div>
+                        <div class="inline-block bg-brand-accent text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Monthly Dedicated Plan</div>
+                        <h3 class="text-2xl font-extrabold text-white">Monthly Subscription Package</h3>
+                        <p class="text-slate-300 text-sm mt-2">One-time monthly payment for unlimited bidding support and maximum discounts.</p>
+                        
+                        <div class="my-6">
+                            <span class="text-3xl sm:text-4xl font-extrabold text-white">Custom / Month</span>
+                            <span class="block text-brand-accent text-xs mt-1 font-semibold">Email us at info@primebidestimatingsolutions.com for special monthly rates</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8 border-t border-slate-700 pt-6">
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> <strong class="text-white">First Estimate Completely FREE</strong></li>
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> Unlimited Project Takeoffs & Estimates</li>
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> Priority 24-Hour Turnaround</li>
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> <strong class="text-white">Free Unlimited Revisions</strong></li>
+                            <li><i class="fa-solid fa-check text-brand-accent mr-3"></i> Dedicated Senior Estimator + GC Marketing</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:info@primebidestimatingsolutions.com?subject=Monthly%20Plan%20Inquiry%20-%20Prime%20Bid" class="w-full bg-brand-accent hover:bg-amber-500 text-slate-950 font-extrabold py-4 rounded-xl text-center shadow-lg transition block">
+                        Email Us for Monthly Pricing & Discounts
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Estimator Calculator -->
+    <section id="calculator" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-blue font-bold text-xs uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Instant Cost Estimator</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Calculate Your Estimate Cost</h2>
+                <p class="text-slate-600 mt-2 text-sm">Select your project parameters below to get an instant estimated cost. Remember: <span class="text-brand-blue font-semibold">First monthly estimate is totally FREE</span>!</p>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 p-8 rounded-3xl shadow-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Project Type / Trade</label>
+                        <select id="calc-trade" onchange="calculateCost()" class="w-full p-3.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-blue">
+                            <option value="1">General Construction / Residential ($90)</option>
+                            <option value="1.5">Commercial Building ($150)</option>
+                            <option value="0.8">Subcontractor Scope (Drywall/Paint) ($70)</option>
+                            <option value="1.8">MEP (Mechanical/Electrical/Plumbing) ($180)</option>
+                            <option value="2.2">Concrete & Structural Steel ($220)</option>
+                            <option value="2.5">Shop & Architectural Drawings ($250)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-2">Project Size (Square Feet)</label>
+                        <select id="calc-size" onchange="calculateCost()" class="w-full p-3.5 bg-white border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-brand-blue">
+                            <option value="1">Under 5,000 Sq. Ft. (Base Price)</option>
+                            <option value="1.3">5,000 - 15,000 Sq. Ft. (+$40)</option>
+                            <option value="1.7">15,000 - 30,000 Sq. Ft. (+$80)</option>
+                            <option value="2.1">30,000+ Sq. Ft. (Includes Bulk Discount)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 text-white p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <div class="text-xs text-slate-400 font-semibold uppercase">Estimated Service Fee (With Bulk Discount)</div>
+                        <div id="calc-result" class="text-3xl font-extrabold text-brand-accent">$90.00</div>
+                        <div class="text-xs text-slate-300 mt-1">First monthly estimate is 100% FREE! Email your trade to get started.</div>
+                    </div>
+                    <a href="#contact" class="bg-brand-blue hover:bg-blue-600 text-white font-bold px-6 py-3.5 rounded-xl text-sm shadow transition">
+                        Proceed with this Estimate
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Reports Section -->
+    <section id="samples" class="py-20 bg-slate-50 border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-blue font-bold text-xs uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Proven Quality</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Want to See Samples? Just Email Us Your Trade!</h2>
+                <p class="text-slate-600 mt-4 text-base">We have completed hundreds of takeoffs for residential, commercial, and specialty contractors across the USA. Email <a href="mailto:info@primebidestimatingsolutions.com" class="text-brand-blue underline font-semibold">info@primebidestimatingsolutions.com</a> with your trade to receive tailored sample reports instantly.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm">
+                    <div class="text-brand-blue font-extrabold text-xl mb-3"><i class="fa-solid fa-file-excel mr-2"></i> 1. Excel Estimate Summary</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">Fully itemized cost breakdown categorized by CSI MasterFormat divisions including material unit costs, labor hours, wage rates based on US state data, and contractor markup percentages.</p>
+                </div>
+                <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm">
+                    <div class="text-brand-blue font-extrabold text-xl mb-3"><i class="fa-solid fa-drafting-compass mr-2"></i> 2. Architectural & Shop Drawings</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">Detailed 2D/3D architectural plans, shop drawings, and custom cabinetry designs crafted to exact USA construction standards.</p>
+                </div>
+                <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm">
+                    <div class="text-brand-blue font-extrabold text-xl mb-3"><i class="fa-solid fa-phone-volume mr-2"></i> 3. GC Bid Follow-Up Report</div>
+                    <p class="text-slate-600 text-sm leading-relaxed">Detailed notes outlining subcontractor bid status, GC feedback, email/call marketing logs, and addenda review to win more bids.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-blue font-bold text-xs uppercase tracking-widest bg-blue-50 px-3 py-1 rounded-full">Got Questions?</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm group">
+                    <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-base">
+                        <span>Is my first estimate really free?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-slate-600 text-sm mt-3 leading-relaxed">Yes! If you sign up for our monthly services or send us your plans for your first project evaluation, the initial estimate is 100% free.</p>
+                </details>
+
+                <details class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm group">
+                    <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-base">
+                        <span>How do I get sample reports for my specific trade?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-slate-600 text-sm mt-3 leading-relaxed">Simply email us at info@primebidestimatingsolutions.com with your specific trade (e.g. Electrical, Drywall, Concrete, Cabinetry) and we will email you matching sample reports right away.</p>
+                </details>
+
+                <details class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm group">
+                    <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-base">
+                        <span>What are your bulk discounts for per-project estimates?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-slate-600 text-sm mt-3 leading-relaxed">We offer up to 40% bulk discounts when you submit multiple projects or choose our monthly subscription package.</p>
+                </details>
+
+                <details class="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm group">
+                    <summary class="font-bold text-slate-900 cursor-pointer flex justify-between items-center text-base">
+                        <span>Do you provide shop drawings and architectural 2D/3D designs?</span>
+                        <i class="fa-solid fa-chevron-down text-slate-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <p class="text-slate-600 text-sm mt-3 leading-relaxed">Yes! In addition to cost estimating and takeoffs, we provide complete 2D/3D architectural drawings, shop drawings, and cabinetry design services.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Quote Submission Section -->
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-brand-accent font-bold text-xs uppercase tracking-widest bg-slate-800 px-3 py-1 rounded-full border border-slate-700">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ready to Win More Bids?</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Send us your project plans or schedule a consultation with our senior estimators. We are ready to support your contracting business across the USA.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-brand-accent text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-semibold uppercase">Email Us Directly</div>
+                                <a href="mailto:info@primebidestimatingsolutions.com" class="text-white font-bold text-sm sm:text-base hover:text-brand-accent">info@primebidestimatingsolutions.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-brand-accent text-xl">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-semibold uppercase">Working Hours</div>
+                                <div class="text-white font-bold text-sm">Mon - Fri: 8:00 AM - 6:00 PM (EST)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center text-brand-accent text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-semibold uppercase">Serving Location</div>
+                                <div class="text-white font-bold text-sm">All 50 United States</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="lg:col-span-7 bg-white text-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Request Your Estimate</h3>
+                    <p class="text-xs text-slate-500 mb-6">Fill out the form below or email us directly at info@primebidestimatingsolutions.com</p>
+
+                    <form id="main-contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Full Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Michael Smith">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Company Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Smith Construction LLC">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Email Address *</label>
+                                <input type="email" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="info@smithconstruction.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="(555) 123-4567">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Pricing Option</label>
+                                <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <option>Per Project ($70 - $250)</option>
+                                    <option>Monthly Subscription (1-Time Payment)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Project Trade</label>
+                                <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <option>Full Estimate Takeoff</option>
+                                    <option>Concrete & Masonry</option>
+                                    <option>Drywall & Framing</option>
+                                    <option>MEP Estimating</option>
+                                    <option>Roofing & Siding</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Project Details & Scope</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue" placeholder="Describe your project, square footage, bid deadline, etc."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand hover:bg-slate-900 text-white font-bold py-4 rounded-xl shadow-md transition text-sm">
+                            Submit Estimate Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4 md:col-span-2">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-accent text-slate-950 flex items-center justify-center font-extrabold text-xl">
+                            PB
+                        </div>
+                        <div>
+                            <span class="text-xl font-extrabold text-white tracking-tight">Prime Bid</span>
+                            <span class="block text-xs font-semibold text-brand-accent tracking-widest uppercase">Estimating Solutions</span>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+                        Professional construction cost estimating and quantity takeoff services for general contractors and subcontractors across the United States. Fast turnaround, accurate pricing, and free revisions.
+                    </p>
+                    <div class="text-sm text-slate-300">
+                        <i class="fa-solid fa-envelope text-brand-accent mr-2"></i> <a href="mailto:info@primebidestimatingsolutions.com" class="hover:text-white underline">info@primebidestimatingsolutions.com</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Pricing Plans</a></li>
+                        <li><a href="#trades" class="hover:text-white transition">Trades Covered</a></li>
+                        <li><a href="#calculator" class="hover:text-white transition">Cost Calculator</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">USA Standards</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>CSI MasterFormat</li>
+                        <li>Bluebeam & PlanSwift</li>
+                        <li>RSMeans Data Aligned</li>
+                        <li>50 US States Coverage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 Prime Bid Estimating Solutions. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#contact" class="hover:text-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal Notification -->
+    <div id="success-modal" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white text-slate-900 p-8 rounded-3xl max-w-md w-full text-center shadow-2xl">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">Request Received!</h3>
+            <p class="text-sm text-slate-600 mb-6">Thank you for reaching out to Prime Bid Estimating Solutions. One of our senior estimators will review your request and get back to you within 2 hours at <strong class="text-slate-900">info@primebidestimatingsolutions.com</strong>.</p>
+            <button onclick="closeModal()" class="w-full bg-brand hover:bg-slate-900 text-white font-bold py-3.5 rounded-xl text-sm transition">
+                Close & Return
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Interactive Cost Calculator with bulk discount consideration
+        function calculateCost() {
+            const tradeMultiplier = parseFloat(document.getElementById('calc-trade').value);
+            const sizeMultiplier = parseFloat(document.getElementById('calc-size').value);
+            
+            const basePrice = 75;
+            let finalCost = Math.round(basePrice * tradeMultiplier * sizeMultiplier);
+            
+            // Apply bulk discount factor if 30k+ sqft selected
+            if (sizeMultiplier >= 2.1) {
+                finalCost = Math.round(finalCost * 0.85); // 15% automatic discount on large projects
+            }
+            
+            document.getElementById('calc-result').innerText = '$' + finalCost + '.00';
+        }
+
+        // Form Submission Handlers
+        function handleHeroSubmit(e) {
+            e.preventDefault();
+            showModal();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showModal();
+        }
+
+        function showModal() {
+            document.getElementById('success-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+            document.getElementById('main-contact-form')?.reset();
+            document.getElementById('hero-quote-form')?.reset();
+        }
+    </script>
+</body>
+</html>
