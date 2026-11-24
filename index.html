@@ -37,34 +37,23 @@
             background-size: cover;
             background-position: center;
         }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
         .card-hover:hover {
             transform: translateY(-5px);
+            transition: all 0.3s ease;
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- Top Announcement & Contact Bar -->
-    <div class="bg-brand text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-            <div class="font-semibold text-brand-accent text-center sm:text-left">
-                <i class="fa-solid fa-fire mr-1.5"></i> Serving All 50 US States | Fast 24-48 Hour Turnaround | First Estimate 100% FREE!
-            </div>
-            <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-medium">
-                <a href="tel:+12104187035" class="hover:text-brand-accent transition flex items-center gap-1">
-                    <i class="fa-solid fa-phone text-brand-accent"></i> (210) 418-7035
-                </a>
-                <span class="text-slate-600">|</span>
-                <a href="tel:+12767399093" class="hover:text-brand-accent transition flex items-center gap-1">
-                    <i class="fa-solid fa-phone text-brand-accent"></i> (276) 739-9093
-                </a>
-                <span class="hidden md:inline text-slate-600">|</span>
-                <a href="mailto:info@primebidestimatingsolutions.com" class="hidden md:flex hover:text-brand-accent transition items-center gap-1">
-                    <i class="fa-solid fa-envelope text-brand-accent"></i> info@primebidestimatingsolutions.com
-                </a>
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-accent text-slate-950 font-semibold text-xs sm:text-sm py-2 px-4 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6">
+            <span><i class="fa-solid fa-fire mr-1"></i> Serving All 50 US States | Fast 24-48 Hour Turnaround | First Estimate 100% FREE!</span>
+            <span class="hidden md:inline-block">|</span>
+            <div class="flex items-center gap-3">
+                <a href="tel:2104187035" class="hover:underline font-bold"><i class="fa-solid fa-phone mr-1"></i> (210) 418-7035</a>
+                <span>|</span>
+                <a href="tel:2767399093" class="hover:underline font-bold"><i class="fa-solid fa-phone mr-1"></i> (276) 739-9093</a>
             </div>
         </div>
     </div>
@@ -78,12 +67,12 @@
                 </div>
                 <div>
                     <span class="text-lg sm:text-xl font-extrabold text-brand tracking-tight">Prime Bid</span>
-                    <span class="block text-[11px] font-semibold text-brand-blue tracking-widest uppercase">Estimating Solutions</span>
+                    <span class="block text-[10px] font-semibold text-brand-blue tracking-widest uppercase">Estimating Solutions</span>
                 </div>
             </a>
 
             <!-- Desktop Nav -->
-            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+            <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-slate-600">
                 <a href="#services" class="hover:text-brand-blue transition">Services</a>
                 <a href="#software" class="hover:text-brand-blue transition">Software & Data</a>
                 <a href="#trades" class="hover:text-brand-blue transition">Trades</a>
@@ -94,8 +83,8 @@
             </nav>
 
             <div class="hidden sm:flex items-center gap-3 shrink-0">
-                <a href="tel:+12104187035" class="hidden xl:flex items-center gap-2 text-sm font-bold text-brand hover:text-brand-blue transition px-3 py-2 rounded-lg bg-slate-100">
-                    <i class="fa-solid fa-headset text-brand-accent"></i> (210) 418-7035
+                <a href="tel:2104187035" class="hidden xl:flex items-center gap-1.5 text-sm font-bold text-slate-800 hover:text-brand-blue">
+                    <i class="fa-solid fa-phone-volume text-brand-accent"></i> (210) 418-7035
                 </a>
                 <a href="#contact" class="bg-brand-blue hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-semibold text-sm shadow-md transition">
                     Get Free Quote
@@ -103,29 +92,29 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="lg:hidden text-slate-700 focus:outline-none text-2xl p-2">
+            <button id="menu-btn" class="lg:hidden text-slate-700 focus:outline-none text-2xl">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2 shadow-lg">
-            <a href="#services" class="block py-2 font-medium text-slate-700 hover:text-brand-blue">Services</a>
-            <a href="#software" class="block py-2 font-medium text-slate-700 hover:text-brand-blue">Software & Data</a>
-            <a href="#trades" class="block py-2 font-medium text-slate-700 hover:text-brand-blue">Trades</a>
-            <a href="#samples" class="block py-2 font-medium text-slate-700 hover:text-brand-blue">Sample Reports</a>
-            <a href="#pricing" class="block py-2 font-medium text-slate-700 hover:text-brand-blue">Pricing</a>
-            <a href="#calculator" class="block py-2 font-medium text-slate-700 hover:text-brand-blue">Estimate Calculator</a>
-            <a href="#faq" class="block py-2 font-medium text-slate-700 hover:text-brand-blue">FAQ</a>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="block py-2 font-medium text-slate-700">Services</a>
+            <a href="#software" class="block py-2 font-medium text-slate-700">Software & Data</a>
+            <a href="#trades" class="block py-2 font-medium text-slate-700">Trades</a>
+            <a href="#samples" class="block py-2 font-medium text-slate-700">Sample Reports</a>
+            <a href="#pricing" class="block py-2 font-medium text-slate-700">Pricing</a>
+            <a href="#calculator" class="block py-2 font-medium text-slate-700">Estimate Calculator</a>
+            <a href="#faq" class="block py-2 font-medium text-slate-700">FAQ</a>
             <div class="pt-3 border-t border-slate-100 flex flex-col gap-2.5">
-                <a href="tel:+12104187035" class="text-sm font-semibold text-slate-700">
-                    <i class="fa-solid fa-phone text-brand-accent mr-2"></i> (210) 418-7035
+                <a href="tel:2104187035" class="text-sm font-bold text-slate-800">
+                    <i class="fa-solid fa-phone text-brand-accent mr-1.5"></i> (210) 418-7035
                 </a>
-                <a href="tel:+12767399093" class="text-sm font-semibold text-slate-700">
-                    <i class="fa-solid fa-phone text-brand-accent mr-2"></i> (276) 739-9093
+                <a href="tel:2767399093" class="text-sm font-bold text-slate-800">
+                    <i class="fa-solid fa-phone text-brand-accent mr-1.5"></i> (276) 739-9093
                 </a>
                 <a href="mailto:info@primebidestimatingsolutions.com" class="text-sm font-semibold text-slate-700">
-                    <i class="fa-solid fa-envelope text-brand-accent mr-2"></i> info@primebidestimatingsolutions.com
+                    <i class="fa-solid fa-envelope text-brand-accent mr-1.5"></i> info@primebidestimatingsolutions.com
                 </a>
                 <a href="#contact" class="bg-brand-blue text-center text-white py-3 rounded-xl font-semibold shadow-md mt-1">
                     Get Free Quote
@@ -139,7 +128,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 bg-brand-light/90 border border-slate-700 text-brand-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                    <div class="inline-flex items-center gap-2 bg-brand-light/80 border border-slate-700 text-brand-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
                         <i class="fa-solid fa-location-dot"></i> Based in San Antonio, TX • Serving All Over the USA
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
@@ -153,8 +142,25 @@
                             <span>Submit Plans for Free Quote</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="#samples" class="bg-slate-800/90 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-8 py-4 rounded-xl text-center transition flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-file-excel text-brand-accent"></i>
+                        <a href="#samples" class="bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-700 font-semibold px-8 py-4 rounded-xl text-center transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-arrow-down text-brand-accent"></i>
                             <span>Download Sample Estimates</span>
                         </a>
                     </div>
+                    <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800 text-slate-300">
+                        <div>
+                            <div class="text-2xl font-bold text-white">99%</div>
+                            <div class="text-xs text-slate-400">Bid Accuracy</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">24-48h</div>
+                            <div class="text-xs text-slate-400">Fast Turnaround</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">50 States</div>
+                            <div class="text-xs text-slate-400">ZIP-Code Based Pricing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Contact Card in Hero -->
